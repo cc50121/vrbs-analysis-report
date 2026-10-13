@@ -1,0 +1,128 @@
+{
+  "scope": {
+    "split": "test",
+    "sources": 36,
+    "queries": 487,
+    "iou_threshold": 0.5
+  },
+  "ours_qwen38": {
+    "total": 487,
+    "original_hits": 215,
+    "original_accuracy": 44.14784394250513,
+    "strict_hits": 200,
+    "strict_accuracy": 41.06776180698152,
+    "positive_hits": 179,
+    "positive_total": 444,
+    "positive_accuracy": 40.31531531531532,
+    "negative_hits": 21,
+    "negative_total": 43,
+    "negative_accuracy": 48.83720930232558,
+    "multi_hits": 0,
+    "multi_total": 48,
+    "multi_accuracy": 0.0,
+    "matched_gt": 194,
+    "gt_total": 495,
+    "target_recall": 39.19191919191919
+  },
+  "detect_track_reid": {
+    "total": 487,
+    "original_hits": 156,
+    "original_accuracy": 32.03285420944559,
+    "strict_hits": 141,
+    "strict_accuracy": 28.95277207392197,
+    "positive_hits": 118,
+    "positive_total": 444,
+    "positive_accuracy": 26.576576576576578,
+    "negative_hits": 23,
+    "negative_total": 43,
+    "negative_accuracy": 53.48837209302326,
+    "multi_hits": 6,
+    "multi_total": 48,
+    "multi_accuracy": 12.5,
+    "matched_gt": 139,
+    "gt_total": 495,
+    "target_recall": 28.08080808080808
+  },
+  "proposal_oracle_reference": {
+    "method": "proposal_oracle",
+    "run_id": "cvpr2027_v2_a100_repro_20261012_shared_test",
+    "total": 487,
+    "strict_hits": 324,
+    "legacy_hits": 359,
+    "positive_total": 444,
+    "positive_correct": 281,
+    "empty_total": 43,
+    "empty_correct": 43,
+    "multi_gt_total": 48,
+    "multi_gt_strict_hits": 0,
+    "multi_gt_legacy_hits": 35,
+    "gt_target_total": 495,
+    "matched_gt_total": 316,
+    "strict_accuracy": 66.52977412731006,
+    "legacy_accuracy": 73.71663244353182,
+    "target_recall": 63.83838383838384
+  },
+  "quadrants": {
+    "DTR only": 56,
+    "Both correct": 85,
+    "Both wrong": 231,
+    "Ours only": 115
+  },
+  "paired_comparison": {
+    "ours_minus_dtr_strict_pp": 12.114989733059552,
+    "source_cluster_bootstrap_95_ci_pp": [
+      6.030150753768845,
+      18.498659517426272
+    ],
+    "mcnemar_exact_p_query_level": 7.551730187471966e-06,
+    "oracle_method_selector_hits": 256,
+    "oracle_method_selector_accuracy": 52.56673511293634,
+    "oracle_method_selector_note": "Diagnostic complementarity ceiling; not a deployable method."
+  },
+  "stage_diagnostics": {
+    "positive_queries": 444,
+    "single_target_queries": 396,
+    "multi_target_queries": 48,
+    "ours_proposal_original_covered": 316,
+    "ours_proposal_original_coverage": 71.17117117117117,
+    "ours_proposal_strict_covered": 311,
+    "ours_proposal_strict_coverage": 70.04504504504504,
+    "dtr_proposal_original_covered": 336,
+    "dtr_proposal_original_coverage": 75.67567567567568,
+    "dtr_proposal_strict_covered": 331,
+    "dtr_proposal_strict_coverage": 74.54954954954955,
+    "ours_strict_hits_when_all_gt_are_covered": 179,
+    "ours_post_grounding_success": 57.556270096463024,
+    "dtr_strict_hits_when_all_gt_are_covered": 118,
+    "dtr_post_grounding_success": 35.64954682779456,
+    "ours_single_target_hits": 179,
+    "ours_single_target_accuracy": 45.2020202020202,
+    "dtr_single_target_hits": 112,
+    "dtr_single_target_accuracy": 28.282828282828284
+  },
+  "ours_error_taxonomy": {
+    "VLM selection: wrong tag": 102,
+    "Grounding: no GT-covered proposal": 104,
+    "Grounding: incomplete multi-target proposals": 5,
+    "Negative: false positive": 22,
+    "VLM selection: incomplete multi-target output": 13,
+    "Grounding: no proposals": 24,
+    "VLM selection: false NONE": 17
+  },
+  "dtr_error_taxonomy": {
+    "Association: wrong proposal ranking": 88,
+    "ReID: person not found": 27,
+    "Grounding: no GT-covered proposal": 95,
+    "Association: threshold rejection": 80,
+    "Grounding: incomplete multi-target proposals": 5,
+    "Negative: false positive": 20,
+    "Association: incomplete multi-target output": 12,
+    "Association: rejected target": 6,
+    "Grounding: no proposals": 13
+  },
+  "notes": [
+    "Diagnostic analysis only; no Test-set parameter or prompt tuning was performed.",
+    "Grounding errors combine category-prompt quality and LocateAnything proposal coverage.",
+    "Strict correctness requires every GT target to match a distinct prediction at IoU >= 0.5."
+  ]
+}
