@@ -1,127 +1,774 @@
 {
   "scope": {
     "split": "test",
-    "sources": 36,
-    "queries": 487,
+    "sources": 31,
+    "queries": 389,
     "iou_threshold": 0.5
   },
-  "ours_qwen38": {
-    "total": 487,
-    "original_hits": 215,
-    "original_accuracy": 44.14784394250513,
-    "strict_hits": 200,
-    "strict_accuracy": 41.06776180698152,
-    "positive_hits": 179,
-    "positive_total": 444,
-    "positive_accuracy": 40.31531531531532,
-    "negative_hits": 21,
-    "negative_total": 43,
-    "negative_accuracy": 48.83720930232558,
+  "pidove_qwen38": {
+    "total": 389,
+    "original_hits": 161,
+    "original_accuracy": 41.38817480719794,
+    "strict_hits": 152,
+    "strict_accuracy": 39.0745501285347,
+    "positive_hits": 137,
+    "positive_total": 355,
+    "positive_accuracy": 38.59154929577465,
+    "negative_hits": 15,
+    "negative_total": 34,
+    "negative_accuracy": 44.11764705882353,
     "multi_hits": 0,
-    "multi_total": 48,
+    "multi_total": 36,
     "multi_accuracy": 0.0,
-    "matched_gt": 194,
-    "gt_total": 495,
-    "target_recall": 39.19191919191919
+    "matched_gt": 146,
+    "gt_total": 394,
+    "target_recall": 37.055837563451774
   },
   "detect_track_reid": {
-    "total": 487,
-    "original_hits": 156,
-    "original_accuracy": 32.03285420944559,
-    "strict_hits": 141,
-    "strict_accuracy": 28.95277207392197,
-    "positive_hits": 118,
-    "positive_total": 444,
-    "positive_accuracy": 26.576576576576578,
-    "negative_hits": 23,
-    "negative_total": 43,
-    "negative_accuracy": 53.48837209302326,
-    "multi_hits": 6,
-    "multi_total": 48,
-    "multi_accuracy": 12.5,
-    "matched_gt": 139,
-    "gt_total": 495,
-    "target_recall": 28.08080808080808
+    "total": 389,
+    "original_hits": 123,
+    "original_accuracy": 31.619537275064268,
+    "strict_hits": 110,
+    "strict_accuracy": 28.27763496143959,
+    "positive_hits": 91,
+    "positive_total": 355,
+    "positive_accuracy": 25.633802816901408,
+    "negative_hits": 19,
+    "negative_total": 34,
+    "negative_accuracy": 55.88235294117647,
+    "multi_hits": 2,
+    "multi_total": 36,
+    "multi_accuracy": 5.555555555555555,
+    "matched_gt": 106,
+    "gt_total": 394,
+    "target_recall": 26.903553299492387
   },
   "proposal_oracle_reference": {
     "method": "proposal_oracle",
-    "run_id": "cvpr2027_v2_a100_repro_20261012_shared_test",
-    "total": 487,
-    "strict_hits": 324,
-    "legacy_hits": 359,
-    "positive_total": 444,
-    "positive_correct": 281,
-    "empty_total": 43,
-    "empty_correct": 43,
-    "multi_gt_total": 48,
-    "multi_gt_strict_hits": 0,
-    "multi_gt_legacy_hits": 35,
-    "gt_target_total": 495,
-    "matched_gt_total": 316,
-    "strict_accuracy": 66.52977412731006,
-    "legacy_accuracy": 73.71663244353182,
-    "target_recall": 63.83838383838384
+    "total": 389,
+    "legacy_hits": 278,
+    "legacy_accuracy": 71.46529562982005,
+    "strict_hits": 255,
+    "strict_accuracy": 65.55269922879178
   },
   "quadrants": {
-    "DTR only": 56,
-    "Both correct": 85,
-    "Both wrong": 231,
-    "Ours only": 115
+    "DTR only": 44,
+    "Ours only": 86,
+    "Both wrong": 193,
+    "Both correct": 66
   },
   "paired_comparison": {
-    "ours_minus_dtr_strict_pp": 12.114989733059552,
+    "ours_minus_dtr_strict_pp": 10.796915167095115,
     "source_cluster_bootstrap_95_ci_pp": [
-      6.030150753768845,
-      18.498659517426272
+      4.5,
+      17.012448132780083
     ],
-    "mcnemar_exact_p_query_level": 7.551730187471966e-06,
-    "oracle_method_selector_hits": 256,
-    "oracle_method_selector_accuracy": 52.56673511293634,
+    "mcnemar_exact_p_query_level": 0.0002895487737632636,
+    "oracle_method_selector_hits": 196,
+    "oracle_method_selector_accuracy": 50.38560411311054,
     "oracle_method_selector_note": "Diagnostic complementarity ceiling; not a deployable method."
   },
   "stage_diagnostics": {
-    "positive_queries": 444,
-    "single_target_queries": 396,
-    "multi_target_queries": 48,
-    "ours_proposal_original_covered": 316,
-    "ours_proposal_original_coverage": 71.17117117117117,
-    "ours_proposal_strict_covered": 311,
-    "ours_proposal_strict_coverage": 70.04504504504504,
-    "dtr_proposal_original_covered": 336,
-    "dtr_proposal_original_coverage": 75.67567567567568,
-    "dtr_proposal_strict_covered": 331,
-    "dtr_proposal_strict_coverage": 74.54954954954955,
-    "ours_strict_hits_when_all_gt_are_covered": 179,
-    "ours_post_grounding_success": 57.556270096463024,
-    "dtr_strict_hits_when_all_gt_are_covered": 118,
-    "dtr_post_grounding_success": 35.64954682779456,
-    "ours_single_target_hits": 179,
-    "ours_single_target_accuracy": 45.2020202020202,
-    "dtr_single_target_hits": 112,
-    "dtr_single_target_accuracy": 28.282828282828284
+    "positive_queries": 355,
+    "single_target_queries": 319,
+    "multi_target_queries": 36,
+    "ours_proposal_original_covered": 244,
+    "ours_proposal_original_coverage": 68.73239436619718,
+    "ours_proposal_strict_covered": 240,
+    "ours_proposal_strict_coverage": 67.6056338028169,
+    "dtr_proposal_original_covered": 265,
+    "dtr_proposal_original_coverage": 74.64788732394366,
+    "dtr_proposal_strict_covered": 261,
+    "dtr_proposal_strict_coverage": 73.52112676056338,
+    "ours_strict_hits_when_all_gt_are_covered": 137,
+    "ours_post_grounding_success": 57.083333333333336,
+    "dtr_strict_hits_when_all_gt_are_covered": 91,
+    "dtr_post_grounding_success": 34.86590038314176,
+    "ours_single_target_hits": 137,
+    "ours_single_target_accuracy": 42.94670846394985,
+    "dtr_single_target_hits": 89,
+    "dtr_single_target_accuracy": 27.899686520376175
   },
   "ours_error_taxonomy": {
-    "VLM selection: wrong tag": 102,
-    "Grounding: no GT-covered proposal": 104,
-    "Grounding: incomplete multi-target proposals": 5,
-    "Negative: false positive": 22,
-    "VLM selection: incomplete multi-target output": 13,
-    "Grounding: no proposals": 24,
-    "VLM selection: false NONE": 17
+    "VLM selection: wrong tag": 81,
+    "Grounding: no GT-covered proposal": 92,
+    "Negative: false positive": 19,
+    "Grounding: incomplete multi-target proposals": 4,
+    "VLM selection: false NONE": 14,
+    "Grounding: no proposals": 19,
+    "VLM selection: incomplete multi-target output": 8
   },
   "dtr_error_taxonomy": {
-    "Association: wrong proposal ranking": 88,
+    "Association: wrong proposal ranking": 69,
+    "Grounding: no GT-covered proposal": 80,
+    "Association: threshold rejection": 59,
+    "Negative: false positive": 15,
     "ReID: person not found": 27,
-    "Grounding: no GT-covered proposal": 95,
-    "Association: threshold rejection": 80,
-    "Grounding: incomplete multi-target proposals": 5,
-    "Negative: false positive": 20,
-    "Association: incomplete multi-target output": 12,
-    "Association: rejected target": 6,
-    "Grounding: no proposals": 13
+    "Grounding: incomplete multi-target proposals": 4,
+    "Association: rejected target": 5,
+    "Grounding: no proposals": 10,
+    "Association: incomplete multi-target output": 10
+  },
+  "dev_selected_gate": {
+    "protocol": {
+      "split": "pidove_v1",
+      "metric": "Strict Multi-Target at IoU >= 0.5",
+      "selection": "highest leave-one-source-out Dev accuracy; fewer features break ties",
+      "prohibited_features": [
+        "ground truth",
+        "IoU",
+        "hit",
+        "source ID",
+        "dataset identity"
+      ],
+      "retrospective_warning": true
+    },
+    "static": {
+      "dev": {
+        "ours": {
+          "hits": 57,
+          "total": 130,
+          "accuracy": 43.84615384615385
+        },
+        "dtr": {
+          "hits": 40,
+          "total": 130,
+          "accuracy": 30.76923076923077
+        },
+        "oracle_union": {
+          "hits": 74,
+          "total": 130,
+          "accuracy": 56.92307692307692
+        },
+        "complementarity": {
+          "both_correct": 23,
+          "ours_only": 34,
+          "dtr_only": 17,
+          "both_wrong": 56
+        }
+      },
+      "test": {
+        "ours": {
+          "hits": 152,
+          "total": 389,
+          "accuracy": 39.0745501285347
+        },
+        "dtr": {
+          "hits": 110,
+          "total": 389,
+          "accuracy": 28.27763496143959
+        },
+        "oracle_union": {
+          "hits": 196,
+          "total": 389,
+          "accuracy": 50.38560411311054
+        },
+        "complementarity": {
+          "both_correct": 66,
+          "ours_only": 86,
+          "dtr_only": 44,
+          "both_wrong": 193
+        }
+      }
+    },
+    "profiles": [
+      {
+        "profile": "question",
+        "features": [
+          "question_token_count",
+          "category_token_count",
+          "multi_cue",
+          "absence_cue"
+        ],
+        "threshold": 1.0,
+        "regularization": 1.0,
+        "dev_oof": {
+          "hits": 57,
+          "total": 130,
+          "accuracy": 43.84615384615385
+        },
+        "test": {
+          "hits": 152,
+          "total": 389,
+          "accuracy": 39.0745501285347
+        },
+        "dev_dtr_decisions": 0,
+        "test_dtr_decisions": 0,
+        "coefficients": {
+          "multi_cue": 3.898706621996316,
+          "question_token_count": -0.3451695762009054,
+          "category_token_count": 0.11232393221894989,
+          "absence_cue": 0.0
+        }
+      },
+      {
+        "profile": "video",
+        "features": [
+          "video_person_match",
+          "video_owner_score",
+          "video_instance_score",
+          "video_selected_rate",
+          "video_proposal_count"
+        ],
+        "threshold": 0.8918714634780511,
+        "regularization": 1.0,
+        "dev_oof": {
+          "hits": 59,
+          "total": 130,
+          "accuracy": 45.38461538461539
+        },
+        "test": {
+          "hits": 152,
+          "total": 389,
+          "accuracy": 39.0745501285347
+        },
+        "dev_dtr_decisions": 6,
+        "test_dtr_decisions": 0,
+        "coefficients": {
+          "video_person_match": 11.056863249973537,
+          "video_selected_rate": 2.3744176004523294,
+          "video_instance_score": -0.3702726627327393,
+          "video_proposal_count": 0.3111244159000884,
+          "video_owner_score": 0.015412516461172423
+        }
+      },
+      {
+        "profile": "runtime",
+        "features": [
+          "question_token_count",
+          "category_token_count",
+          "multi_cue",
+          "absence_cue",
+          "ours_proposal_count",
+          "ours_prediction_count",
+          "ours_explicit_none",
+          "dtr_proposal_count",
+          "dtr_prediction_count",
+          "dtr_explicit_none",
+          "dtr_person_match",
+          "dtr_owner_score",
+          "dtr_instance_score",
+          "dtr_instance_margin",
+          "dtr_selected"
+        ],
+        "threshold": 0.7882834592707024,
+        "regularization": 1.0,
+        "dev_oof": {
+          "hits": 60,
+          "total": 130,
+          "accuracy": 46.15384615384615
+        },
+        "test": {
+          "hits": 154,
+          "total": 389,
+          "accuracy": 39.588688946015424
+        },
+        "dev_dtr_decisions": 20,
+        "test_dtr_decisions": 54,
+        "coefficients": {
+          "dtr_instance_margin": 17.984989548771363,
+          "dtr_instance_score": 2.491032452674875,
+          "dtr_owner_score": -2.095237158499086,
+          "multi_cue": 1.326516806292765,
+          "dtr_prediction_count": 1.3054719412202636,
+          "dtr_selected": -0.9525317886428073,
+          "ours_prediction_count": 0.8044961276068563,
+          "ours_explicit_none": -0.8044961276068558,
+          "dtr_explicit_none": -0.550558146924882,
+          "dtr_person_match": -0.3654216958382167,
+          "ours_proposal_count": -0.30640291355448646,
+          "category_token_count": 0.26185526781668816,
+          "question_token_count": -0.2546262063616385,
+          "dtr_proposal_count": 0.06161980831041496,
+          "absence_cue": 0.0
+        }
+      }
+    ],
+    "selected_profile": "runtime",
+    "test_categories": [
+      {
+        "category": "bag",
+        "total": 4,
+        "ours_hits": 4,
+        "ours_accuracy": 100.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 100.0
+      },
+      {
+        "category": "clear plastic cup",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 3,
+        "dtr_accuracy": 100.0,
+        "advantage_pp": -100.0
+      },
+      {
+        "category": "transparent cup",
+        "total": 3,
+        "ours_hits": 3,
+        "ours_accuracy": 100.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 100.0
+      },
+      {
+        "category": "alcohol spray",
+        "total": 3,
+        "ours_hits": 2,
+        "ours_accuracy": 66.66666666666667,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 66.66666666666667
+      },
+      {
+        "category": "mobile phones",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 2,
+        "dtr_accuracy": 66.66666666666667,
+        "advantage_pp": -66.66666666666667
+      },
+      {
+        "category": "clothes",
+        "total": 11,
+        "ours_hits": 7,
+        "ours_accuracy": 63.63636363636363,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 63.63636363636363
+      },
+      {
+        "category": "film camera",
+        "total": 4,
+        "ours_hits": 3,
+        "ours_accuracy": 75.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 25.0,
+        "advantage_pp": 50.0
+      },
+      {
+        "category": "laptop",
+        "total": 19,
+        "ours_hits": 14,
+        "ours_accuracy": 73.6842105263158,
+        "dtr_hits": 7,
+        "dtr_accuracy": 36.8421052631579,
+        "advantage_pp": 36.8421052631579
+      },
+      {
+        "category": "headphones",
+        "total": 11,
+        "ours_hits": 8,
+        "ours_accuracy": 72.72727272727273,
+        "dtr_hits": 4,
+        "dtr_accuracy": 36.36363636363637,
+        "advantage_pp": 36.36363636363637
+      },
+      {
+        "category": "computer",
+        "total": 6,
+        "ours_hits": 3,
+        "ours_accuracy": 50.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 16.666666666666668,
+        "advantage_pp": 33.333333333333336
+      },
+      {
+        "category": "beverage bottle",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 33.333333333333336,
+        "advantage_pp": -33.333333333333336
+      },
+      {
+        "category": "earphone",
+        "total": 3,
+        "ours_hits": 1,
+        "ours_accuracy": 33.333333333333336,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 33.333333333333336
+      },
+      {
+        "category": "eyeglass case",
+        "total": 3,
+        "ours_hits": 1,
+        "ours_accuracy": 33.333333333333336,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 33.333333333333336
+      },
+      {
+        "category": "white mug",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 33.333333333333336,
+        "advantage_pp": -33.333333333333336
+      },
+      {
+        "category": "wallet",
+        "total": 10,
+        "ours_hits": 6,
+        "ours_accuracy": 60.0,
+        "dtr_hits": 3,
+        "dtr_accuracy": 30.0,
+        "advantage_pp": 30.0
+      },
+      {
+        "category": "mobile phone",
+        "total": 16,
+        "ours_hits": 11,
+        "ours_accuracy": 68.75,
+        "dtr_hits": 7,
+        "dtr_accuracy": 43.75,
+        "advantage_pp": 25.0
+      },
+      {
+        "category": "coconut water drink",
+        "total": 4,
+        "ours_hits": 1,
+        "ours_accuracy": 25.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 25.0
+      },
+      {
+        "category": "small bottle of beer",
+        "total": 4,
+        "ours_hits": 2,
+        "ours_accuracy": 50.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 25.0,
+        "advantage_pp": 25.0
+      },
+      {
+        "category": "disposable water cup",
+        "total": 10,
+        "ours_hits": 5,
+        "ours_accuracy": 50.0,
+        "dtr_hits": 3,
+        "dtr_accuracy": 30.0,
+        "advantage_pp": 20.0
+      },
+      {
+        "category": "sports water bottle",
+        "total": 10,
+        "ours_hits": 8,
+        "ours_accuracy": 80.0,
+        "dtr_hits": 6,
+        "dtr_accuracy": 60.0,
+        "advantage_pp": 20.0
+      },
+      {
+        "category": "water cup",
+        "total": 10,
+        "ours_hits": 4,
+        "ours_accuracy": 40.0,
+        "dtr_hits": 2,
+        "dtr_accuracy": 20.0,
+        "advantage_pp": 20.0
+      },
+      {
+        "category": "kettle",
+        "total": 5,
+        "ours_hits": 4,
+        "ours_accuracy": 80.0,
+        "dtr_hits": 5,
+        "dtr_accuracy": 100.0,
+        "advantage_pp": -20.0
+      },
+      {
+        "category": "white stainless steel open cup",
+        "total": 5,
+        "ours_hits": 1,
+        "ours_accuracy": 20.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 20.0
+      },
+      {
+        "category": "student card",
+        "total": 6,
+        "ours_hits": 1,
+        "ours_accuracy": 16.666666666666668,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 16.666666666666668
+      },
+      {
+        "category": "toothbrush",
+        "total": 6,
+        "ours_hits": 2,
+        "ours_accuracy": 33.333333333333336,
+        "dtr_hits": 1,
+        "dtr_accuracy": 16.666666666666668,
+        "advantage_pp": 16.666666666666668
+      },
+      {
+        "category": "yogurt bottle",
+        "total": 6,
+        "ours_hits": 1,
+        "ours_accuracy": 16.666666666666668,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 16.666666666666668
+      },
+      {
+        "category": "thermos cup",
+        "total": 7,
+        "ours_hits": 5,
+        "ours_accuracy": 71.42857142857143,
+        "dtr_hits": 6,
+        "dtr_accuracy": 85.71428571428571,
+        "advantage_pp": -14.285714285714286
+      },
+      {
+        "category": "white headphones",
+        "total": 7,
+        "ours_hits": 1,
+        "ours_accuracy": 14.285714285714286,
+        "dtr_hits": 2,
+        "dtr_accuracy": 28.571428571428573,
+        "advantage_pp": -14.285714285714286
+      },
+      {
+        "category": "bottle",
+        "total": 11,
+        "ours_hits": 6,
+        "ours_accuracy": 54.54545454545455,
+        "dtr_hits": 5,
+        "dtr_accuracy": 45.45454545454545,
+        "advantage_pp": 9.090909090909092
+      },
+      {
+        "category": "phone",
+        "total": 14,
+        "ours_hits": 3,
+        "ours_accuracy": 21.428571428571427,
+        "dtr_hits": 4,
+        "dtr_accuracy": 28.571428571428573,
+        "advantage_pp": -7.142857142857143
+      },
+      {
+        "category": "cup",
+        "total": 39,
+        "ours_hits": 8,
+        "ours_accuracy": 20.512820512820515,
+        "dtr_hits": 10,
+        "dtr_accuracy": 25.641025641025642,
+        "advantage_pp": -5.128205128205129
+      },
+      {
+        "category": "medicine bottle",
+        "total": 11,
+        "ours_hits": 6,
+        "ours_accuracy": 54.54545454545455,
+        "dtr_hits": 6,
+        "dtr_accuracy": 54.54545454545455,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "beer",
+        "total": 9,
+        "ours_hits": 1,
+        "ours_accuracy": 11.11111111111111,
+        "dtr_hits": 1,
+        "dtr_accuracy": 11.11111111111111,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "mug",
+        "total": 9,
+        "ours_hits": 2,
+        "ours_accuracy": 22.22222222222222,
+        "dtr_hits": 2,
+        "dtr_accuracy": 22.22222222222222,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "towels",
+        "total": 9,
+        "ours_hits": 1,
+        "ours_accuracy": 11.11111111111111,
+        "dtr_hits": 1,
+        "dtr_accuracy": 11.11111111111111,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "cake plate",
+        "total": 8,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "game controller",
+        "total": 8,
+        "ours_hits": 6,
+        "ours_accuracy": 75.0,
+        "dtr_hits": 6,
+        "dtr_accuracy": 75.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "disposable cup",
+        "total": 6,
+        "ours_hits": 1,
+        "ours_accuracy": 16.666666666666668,
+        "dtr_hits": 1,
+        "dtr_accuracy": 16.666666666666668,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "large bottle",
+        "total": 6,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "can of beer",
+        "total": 4,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "earphones",
+        "total": 4,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "keychain",
+        "total": 4,
+        "ours_hits": 1,
+        "ours_accuracy": 25.0,
+        "dtr_hits": 1,
+        "dtr_accuracy": 25.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "two oranges",
+        "total": 4,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "alcohol sprayer",
+        "total": 3,
+        "ours_hits": 1,
+        "ours_accuracy": 33.333333333333336,
+        "dtr_hits": 1,
+        "dtr_accuracy": 33.333333333333336,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "cardholder",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "hand sanitizer",
+        "total": 3,
+        "ours_hits": 3,
+        "ours_accuracy": 100.0,
+        "dtr_hits": 3,
+        "dtr_accuracy": 100.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "paper bag",
+        "total": 3,
+        "ours_hits": 2,
+        "ours_accuracy": 66.66666666666667,
+        "dtr_hits": 2,
+        "dtr_accuracy": 66.66666666666667,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "slippers",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "smartwatch",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "sports shoes",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "transparent nut container",
+        "total": 3,
+        "ours_hits": 3,
+        "ours_accuracy": 100.0,
+        "dtr_hits": 3,
+        "dtr_accuracy": 100.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "white clothes",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      },
+      {
+        "category": "white sneakers",
+        "total": 3,
+        "ours_hits": 0,
+        "ours_accuracy": 0.0,
+        "dtr_hits": 0,
+        "dtr_accuracy": 0.0,
+        "advantage_pp": 0.0
+      }
+    ]
   },
   "notes": [
-    "Diagnostic analysis only; no Test-set parameter or prompt tuning was performed.",
+    "Static Pidove and DTR predictions were not retuned for this analysis.",
+    "The runtime gate was selected on Pidove v1 Dev and evaluated once on Test.",
+    "This is retrospective because historical outputs for the corpus had already been inspected.",
     "Grounding errors combine category-prompt quality and LocateAnything proposal coverage.",
     "Strict correctness requires every GT target to match a distinct prediction at IoU >= 0.5."
   ]

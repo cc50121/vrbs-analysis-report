@@ -19,25 +19,25 @@
 <text x="70" y="96.5" text-anchor="end" font-family="Arial" font-size="11" fill="#66717f">70%</text>
 <line x1="80" y1="60.0" x2="790" y2="60.0" stroke="#e5e9ee"/>
 <text x="70" y="64.0" text-anchor="end" font-family="Arial" font-size="11" fill="#66717f">80%</text>
-<rect x="144.3" y="176.5" width="46.0" height="143.5" fill="#147d92" rx="2"/>
-<text x="167.3" y="170.5" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">44.1</text>
+<rect x="144.3" y="185.5" width="46.0" height="134.5" fill="#147d92" rx="2"/>
+<text x="167.3" y="179.5" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">41.4</text>
 <text x="167.3" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Original</text>
-<rect x="198.3" y="186.5" width="46.0" height="133.5" fill="#54a9b8" rx="2"/>
-<text x="221.3" y="180.5" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">41.1</text>
+<rect x="198.3" y="193.0" width="46.0" height="127.0" fill="#54a9b8" rx="2"/>
+<text x="221.3" y="187.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">39.1</text>
 <text x="221.3" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Strict</text>
-<text x="198.3" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Ours (Qwen3.8)</text>
-<rect x="381.0" y="215.9" width="46.0" height="104.1" fill="#c53d68" rx="2"/>
-<text x="404.0" y="209.9" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">32.0</text>
+<text x="198.3" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Pidove (Qwen3.8)</text>
+<rect x="381.0" y="217.2" width="46.0" height="102.8" fill="#c53d68" rx="2"/>
+<text x="404.0" y="211.2" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">31.6</text>
 <text x="404.0" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Original</text>
-<rect x="435.0" y="225.9" width="46.0" height="94.1" fill="#df7695" rx="2"/>
-<text x="458.0" y="219.9" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">29.0</text>
+<rect x="435.0" y="228.1" width="46.0" height="91.9" fill="#df7695" rx="2"/>
+<text x="458.0" y="222.1" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">28.3</text>
 <text x="458.0" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Strict</text>
 <text x="435.0" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Detect-Track-ReID</text>
-<rect x="617.7" y="80.4" width="46.0" height="239.6" fill="#586174" rx="2"/>
-<text x="640.7" y="74.4" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">73.7</text>
+<rect x="617.7" y="87.7" width="46.0" height="232.3" fill="#586174" rx="2"/>
+<text x="640.7" y="81.7" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">71.5</text>
 <text x="640.7" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Original</text>
-<rect x="671.7" y="103.8" width="46.0" height="216.2" fill="#8b94a3" rx="2"/>
-<text x="694.7" y="97.8" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">66.5</text>
+<rect x="671.7" y="107.0" width="46.0" height="213.0" fill="#8b94a3" rx="2"/>
+<text x="694.7" y="101.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">65.6</text>
 <text x="694.7" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Strict</text>
 <text x="671.7" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Proposal Oracle</text>
 </svg>
