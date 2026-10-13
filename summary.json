@@ -5,7 +5,7 @@
     "queries": 389,
     "iou_threshold": 0.5
   },
-  "pidove_qwen38": {
+  "ours_qwen38": {
     "total": 389,
     "original_hits": 161,
     "original_accuracy": 41.38817480719794,
@@ -766,7 +766,7 @@
     ]
   },
   "notes": [
-    "Static Pidove and DTR predictions were not retuned for this analysis.",
+    "Static Ours and DTR predictions were not retuned for this analysis.",
     "The runtime gate was selected on Pidove v1 Dev and evaluated once on Test.",
     "This is retrospective because historical outputs for the corpus had already been inspected.",
     "Grounding errors combine category-prompt quality and LocateAnything proposal coverage.",

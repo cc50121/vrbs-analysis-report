@@ -4,7 +4,7 @@
 <text x="248" y="71" text-anchor="end" font-family="Arial" font-size="12" fill="#27313c">Both correct</text>
 <rect x="260" y="52" width="171.0" height="26" rx="3" fill="#17a673"/>
 <text x="439.0" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">66</text>
-<text x="248" y="113" text-anchor="end" font-family="Arial" font-size="12" fill="#27313c">Pidove only</text>
+<text x="248" y="113" text-anchor="end" font-family="Arial" font-size="12" fill="#27313c">Ours only</text>
 <rect x="260" y="94" width="222.8" height="26" rx="3" fill="#147d92"/>
 <text x="490.8" y="112" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">86</text>
 <text x="248" y="155" text-anchor="end" font-family="Arial" font-size="12" fill="#27313c">DTR only</text>

@@ -25,7 +25,7 @@
 <rect x="198.3" y="193.0" width="46.0" height="127.0" fill="#54a9b8" rx="2"/>
 <text x="221.3" y="187.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">39.1</text>
 <text x="221.3" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Strict</text>
-<text x="198.3" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Pidove (Qwen3.8)</text>
+<text x="198.3" y="374" text-anchor="middle" font-family="Arial" font-size="12" font-weight="700" fill="#27313c">Ours (Qwen3.8)</text>
 <rect x="381.0" y="217.2" width="46.0" height="102.8" fill="#c53d68" rx="2"/>
 <text x="404.0" y="211.2" text-anchor="middle" font-family="Arial" font-size="11" fill="#27313c">31.6</text>
 <text x="404.0" y="338.0" text-anchor="middle" font-family="Arial" font-size="10" fill="#56616e">Original</text>

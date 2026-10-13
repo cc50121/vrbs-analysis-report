@@ -67,6 +67,6 @@
 <circle cx="220.0" cy="563.3" r="7.5" fill="#147d92" fill-opacity="0.72" stroke="#ffffff"/>
 <circle cx="266.7" cy="610.0" r="6.4" fill="#147d92" fill-opacity="0.72" stroke="#ffffff"/>
 <text x="274.7" y="603.0" font-family="Arial" font-size="10" fill="#27313c">VRBS-S0041</text>
-<text x="360.0" y="672" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#147d92">Pidove Strict Accuracy (%)</text>
+<text x="360.0" y="672" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#147d92">Ours Strict Accuracy (%)</text>
 <text x="22" y="330.0" transform="rotate(-90 22 330.0)" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#c53d68">DTR Strict Accuracy (%)</text>
 </svg>
