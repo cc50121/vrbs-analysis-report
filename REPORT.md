@@ -19,7 +19,7 @@ This is a diagnostic analysis on the frozen Pidove v1 Test split (31 sources, 38
 ## Complementarity
 
 - Both correct: 66
-- Ours only: 86
+- Pidove only: 86
 - DTR only: 44
 - Both wrong: 193
 
